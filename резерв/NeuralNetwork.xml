@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<neuralnetwork>
+<description description="Определяет, к какому классу принадлежит машина" level="4" netname="Определитель класса машин">
+<inputs>
+<input desc="Масса" unit="т"/>
+<input desc="Двигатель" unit="лс"/>
+<input desc="Пассажиров" unit="чел"/>
+<input desc="Грузоподъемность" unit="т"/>
+</inputs>
+<layers>
+<layer count="3"/>
+<layer count="3"/>
+</layers>
+<outputs>
+<output desc="Легковой"/>
+<output desc="Пассажирский"/>
+<output desc="Грузовой"/>
+</outputs>
+</description>
+<network>
+<neyronlayers>
+<neironlayer>
+<neiron-0-0 level="0" number="0"/>
+<neiron-0-1 level="0" number="1"/>
+<neiron-0-2 level="0" number="2"/>
+<neiron-0-3 level="0" number="3"/>
+</neironlayer>
+<neironlayer>
+<neiron-1-0 level="1" number="0"/>
+<neiron-1-1 level="1" number="1"/>
+<neiron-1-2 level="1" number="2"/>
+</neironlayer>
+<neironlayer>
+<neiron-2-0 level="2" number="0"/>
+<neiron-2-1 level="2" number="1"/>
+<neiron-2-2 level="2" number="2"/>
+</neironlayer>
+<neironlayer>
+<neiron-3-0 level="3" number="0"/>
+<neiron-3-1 level="3" number="1"/>
+<neiron-3-2 level="3" number="2"/>
+</neironlayer>
+</neyronlayers>
+<synapselayers>
+<synapselayer0>
+<synapse level="0" number="0" weight="0.17477834224700928"/>
+<synapse level="0" number="1" weight="0.34962958097457886"/>
+<synapse level="0" number="2" weight="0.1991415023803711"/>
+<synapse level="0" number="3" weight="0.3125994801521301"/>
+<synapse level="0" number="4" weight="0.18089145421981812"/>
+<synapse level="0" number="5" weight="0.36465561389923096"/>
+<synapse level="0" number="6" weight="0.44851362705230713"/>
+<synapse level="0" number="7" weight="0.4720724821090698"/>
+<synapse level="0" number="8" weight="0.11443549394607544"/>
+<synapse level="0" number="9" weight="0.5383859276771545"/>
+<synapse level="0" number="10" weight="0.5526933670043945"/>
+<synapse level="0" number="11" weight="0.38592058420181274"/>
+</synapselayer0>
+<synapselayer1>
+<synapse level="1" number="0" weight="0.6491870880126953"/>
+<synapse level="1" number="1" weight="0.10006499290466309"/>
+<synapse level="1" number="2" weight="0.9162731170654297"/>
+<synapse level="1" number="3" weight="0.3515312075614929"/>
+<synapse level="1" number="4" weight="0.1561504602432251"/>
+<synapse level="1" number="5" weight="0.611657977104187"/>
+<synapse level="1" number="6" weight="0.37703466415405273"/>
+<synapse level="1" number="7" weight="0.293573260307312"/>
+<synapse level="1" number="8" weight="0.9692057371139526"/>
+</synapselayer1>
+<synapselayer2>
+<synapse level="2" number="0" weight="0.5232133865356445"/>
+<synapse level="2" number="1" weight="0.8450767993927002"/>
+<synapse level="2" number="2" weight="0.5288976430892944"/>
+<synapse level="2" number="3" weight="0.6414186358451843"/>
+<synapse level="2" number="4" weight="0.7170740962028503"/>
+<synapse level="2" number="5" weight="0.5215693712234497"/>
+<synapse level="2" number="6" weight="0.9082474708557129"/>
+<synapse level="2" number="7" weight="0.12666940689086914"/>
+<synapse level="2" number="8" weight="0.09250140190124512"/>
+</synapselayer2>
+</synapselayers>
+</network>
+</neuralnetwork>
